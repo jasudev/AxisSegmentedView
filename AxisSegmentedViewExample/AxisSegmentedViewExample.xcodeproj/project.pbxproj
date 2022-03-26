@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B0EE0EA27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DA27E4B84D005B804E /* AxisSegmentedViewExampleApp.swift */; };
+		4B0EE0EB27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DA27E4B84D005B804E /* AxisSegmentedViewExampleApp.swift */; };
+		4B0EE0EC27E4B84E005B804E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DB27E4B84D005B804E /* ContentView.swift */; };
+		4B0EE0ED27E4B84E005B804E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DB27E4B84D005B804E /* ContentView.swift */; };
+		4B0EE0EE27E4B84E005B804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DC27E4B84E005B804E /* Assets.xcassets */; };
+		4B0EE0EF27E4B84E005B804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DC27E4B84E005B804E /* Assets.xcassets */; };
+		4B0EE0FC27E4BE88005B804E /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0EE0FB27E4BE88005B804E /* AxisSegmentedView */; };
+		4B0EE0FE27E4BE8C005B804E /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0EE0FD27E4BE8B005B804E /* AxisSegmentedView */; };
+		4B3D010B27EE014F000A8506 /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
+		4B3D010C27EE014F000A8506 /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
+		4B4A605927EF6052008D69AF /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
+		4B4A605A27EF6052008D69AF /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
+		4BA1E34F27EC28D0002DE9F3 /* NormalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */; };
+		4BA1E35027EC28D0002DE9F3 /* NormalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */; };
+		4BA1E35227EC2903002DE9F3 /* ViscosityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */; };
+		4BA1E35327EC2903002DE9F3 /* ViscosityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */; };
+		4BFBB6E427EAEECD00663DED /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
+		4BFBB6E527EAEECD00663DED /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
+		4BFBB6E727EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
+		4BFBB6E827EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
+		4BFBB6EA27EAEF6D00663DED /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
+		4BFBB6EB27EAEF6D00663DED /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
+		4BFBB6ED27EAFEBB00663DED /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */; };
+		4BFBB6EE27EAFEBB00663DED /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */; };
+		4BFBB6F127EB4EDA00663DED /* BacisValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F027EB4EDA00663DED /* BacisValue.swift */; };
+		4BFBB6F227EB4EDA00663DED /* BacisValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F027EB4EDA00663DED /* BacisValue.swift */; };
+		4BFBB6F427EB4F4300663DED /* CapsuleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F327EB4F4300663DED /* CapsuleValue.swift */; };
+		4BFBB6F527EB4F4300663DED /* CapsuleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F327EB4F4300663DED /* CapsuleValue.swift */; };
+		4BFBB6F727EB4F8B00663DED /* JellyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F627EB4F8B00663DED /* JellyValue.swift */; };
+		4BFBB6F827EB4F8B00663DED /* JellyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F627EB4F8B00663DED /* JellyValue.swift */; };
+		4BFBB6FA27EB4FCC00663DED /* LineValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F927EB4FCC00663DED /* LineValue.swift */; };
+		4BFBB6FB27EB4FCC00663DED /* LineValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F927EB4FCC00663DED /* LineValue.swift */; };
+		4BFBB6FD27EB501000663DED /* NeumorphismValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FC27EB501000663DED /* NeumorphismValue.swift */; };
+		4BFBB6FE27EB501000663DED /* NeumorphismValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FC27EB501000663DED /* NeumorphismValue.swift */; };
+		4BFBB70027EB504300663DED /* ScaleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FF27EB504300663DED /* ScaleValue.swift */; };
+		4BFBB70127EB504300663DED /* ScaleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FF27EB504300663DED /* ScaleValue.swift */; };
+		4BFBB70327EB69EA00663DED /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
+		4BFBB70427EB69EA00663DED /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B0EE0DA27E4B84D005B804E /* AxisSegmentedViewExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisSegmentedViewExampleApp.swift; sourceTree = "<group>"; };
+		4B0EE0DB27E4B84D005B804E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B0EE0DC27E4B84E005B804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B0EE0E127E4B84E005B804E /* AxisSegmentedViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxisSegmentedViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0EE0E727E4B84E005B804E /* AxisSegmentedViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxisSegmentedViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0EE0E927E4B84E005B804E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4B0EE0F927E4B875005B804E /* AxisSegmentedView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AxisSegmentedView; path = ..; sourceTree = "<group>"; };
+		4B3D010A27EE014F000A8506 /* CustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
+		4B4A605827EF6052008D69AF /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
+		4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalValue.swift; sourceTree = "<group>"; };
+		4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViscosityValue.swift; sourceTree = "<group>"; };
+		4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedListView.swift; sourceTree = "<group>"; };
+		4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewWithControl.swift; sourceTree = "<group>"; };
+		4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItemView.swift; sourceTree = "<group>"; };
+		4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		4BFBB6F027EB4EDA00663DED /* BacisValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacisValue.swift; sourceTree = "<group>"; };
+		4BFBB6F327EB4F4300663DED /* CapsuleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleValue.swift; sourceTree = "<group>"; };
+		4BFBB6F627EB4F8B00663DED /* JellyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyValue.swift; sourceTree = "<group>"; };
+		4BFBB6F927EB4FCC00663DED /* LineValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineValue.swift; sourceTree = "<group>"; };
+		4BFBB6FC27EB501000663DED /* NeumorphismValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismValue.swift; sourceTree = "<group>"; };
+		4BFBB6FF27EB504300663DED /* ScaleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleValue.swift; sourceTree = "<group>"; };
+		4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutStyleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B0EE0DE27E4B84E005B804E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0EE0FC27E4BE88005B804E /* AxisSegmentedView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0EE0E427E4B84E005B804E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0EE0FE27E4BE8C005B804E /* AxisSegmentedView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B0EE0D427E4B84D005B804E = {
+			isa = PBXGroup;
+			children = (
+				4B0EE0F827E4B875005B804E /* Packages */,
+				4B0EE0D927E4B84D005B804E /* Shared */,
+				4B0EE0E827E4B84E005B804E /* macOS */,
+				4B0EE0E227E4B84E005B804E /* Products */,
+				4B0EE0FA27E4BE88005B804E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B0EE0D927E4B84D005B804E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EE0DA27E4B84D005B804E /* AxisSegmentedViewExampleApp.swift */,
+				4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */,
+				4B0EE0DB27E4B84D005B804E /* ContentView.swift */,
+				4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */,
+				4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */,
+				4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */,
+				4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */,
+				4B4A605827EF6052008D69AF /* CustomStyleView.swift */,
+				4B3D010A27EE014F000A8506 /* CustomStyle.swift */,
+				4BFBB6EF27EB4EC100663DED /* ViewModel */,
+				4B0EE0DC27E4B84E005B804E /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4B0EE0E227E4B84E005B804E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EE0E127E4B84E005B804E /* AxisSegmentedViewExample.app */,
+				4B0EE0E727E4B84E005B804E /* AxisSegmentedViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B0EE0E827E4B84E005B804E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EE0E927E4B84E005B804E /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		4B0EE0F827E4B875005B804E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EE0F927E4B875005B804E /* AxisSegmentedView */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4B0EE0FA27E4BE88005B804E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BFBB6EF27EB4EC100663DED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4BFBB6F027EB4EDA00663DED /* BacisValue.swift */,
+				4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */,
+				4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */,
+				4BFBB6F327EB4F4300663DED /* CapsuleValue.swift */,
+				4BFBB6F627EB4F8B00663DED /* JellyValue.swift */,
+				4BFBB6F927EB4FCC00663DED /* LineValue.swift */,
+				4BFBB6FC27EB501000663DED /* NeumorphismValue.swift */,
+				4BFBB6FF27EB504300663DED /* ScaleValue.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B0EE0E027E4B84E005B804E /* AxisSegmentedViewExample (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B0EE0F227E4B84E005B804E /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (iOS)" */;
+			buildPhases = (
+				4B0EE0DD27E4B84E005B804E /* Sources */,
+				4B0EE0DE27E4B84E005B804E /* Frameworks */,
+				4B0EE0DF27E4B84E005B804E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AxisSegmentedViewExample (iOS)";
+			packageProductDependencies = (
+				4B0EE0FB27E4BE88005B804E /* AxisSegmentedView */,
+			);
+			productName = "AxisSegmentedViewExample (iOS)";
+			productReference = 4B0EE0E127E4B84E005B804E /* AxisSegmentedViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B0EE0E627E4B84E005B804E /* AxisSegmentedViewExample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B0EE0F527E4B84E005B804E /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (macOS)" */;
+			buildPhases = (
+				4B0EE0E327E4B84E005B804E /* Sources */,
+				4B0EE0E427E4B84E005B804E /* Frameworks */,
+				4B0EE0E527E4B84E005B804E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AxisSegmentedViewExample (macOS)";
+			packageProductDependencies = (
+				4B0EE0FD27E4BE8B005B804E /* AxisSegmentedView */,
+			);
+			productName = "AxisSegmentedViewExample (macOS)";
+			productReference = 4B0EE0E727E4B84E005B804E /* AxisSegmentedViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B0EE0D527E4B84D005B804E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					4B0EE0E027E4B84E005B804E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					4B0EE0E627E4B84E005B804E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B0EE0D827E4B84D005B804E /* Build configuration list for PBXProject "AxisSegmentedViewExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B0EE0D427E4B84D005B804E;
+			productRefGroup = 4B0EE0E227E4B84E005B804E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B0EE0E027E4B84E005B804E /* AxisSegmentedViewExample (iOS) */,
+				4B0EE0E627E4B84E005B804E /* AxisSegmentedViewExample (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B0EE0DF27E4B84E005B804E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0EE0EE27E4B84E005B804E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0EE0E527E4B84E005B804E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0EE0EF27E4B84E005B804E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B0EE0DD27E4B84E005B804E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFBB70327EB69EA00663DED /* WithoutStyleView.swift in Sources */,
+				4BFBB6F727EB4F8B00663DED /* JellyValue.swift in Sources */,
+				4BFBB6EA27EAEF6D00663DED /* SelectionItemView.swift in Sources */,
+				4BFBB6F127EB4EDA00663DED /* BacisValue.swift in Sources */,
+				4B0EE0EC27E4B84E005B804E /* ContentView.swift in Sources */,
+				4B0EE0EA27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */,
+				4BFBB6E427EAEECD00663DED /* SegmentedListView.swift in Sources */,
+				4BFBB6FD27EB501000663DED /* NeumorphismValue.swift in Sources */,
+				4B4A605927EF6052008D69AF /* CustomStyleView.swift in Sources */,
+				4B3D010B27EE014F000A8506 /* CustomStyle.swift in Sources */,
+				4BFBB6E727EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */,
+				4BFBB70027EB504300663DED /* ScaleValue.swift in Sources */,
+				4BA1E34F27EC28D0002DE9F3 /* NormalValue.swift in Sources */,
+				4BFBB6FA27EB4FCC00663DED /* LineValue.swift in Sources */,
+				4BFBB6ED27EAFEBB00663DED /* Color+Extensions.swift in Sources */,
+				4BFBB6F427EB4F4300663DED /* CapsuleValue.swift in Sources */,
+				4BA1E35227EC2903002DE9F3 /* ViscosityValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0EE0E327E4B84E005B804E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFBB70427EB69EA00663DED /* WithoutStyleView.swift in Sources */,
+				4BFBB6F827EB4F8B00663DED /* JellyValue.swift in Sources */,
+				4BFBB6EB27EAEF6D00663DED /* SelectionItemView.swift in Sources */,
+				4BFBB6F227EB4EDA00663DED /* BacisValue.swift in Sources */,
+				4B0EE0ED27E4B84E005B804E /* ContentView.swift in Sources */,
+				4B0EE0EB27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */,
+				4BFBB6E527EAEECD00663DED /* SegmentedListView.swift in Sources */,
+				4BFBB6FE27EB501000663DED /* NeumorphismValue.swift in Sources */,
+				4B4A605A27EF6052008D69AF /* CustomStyleView.swift in Sources */,
+				4B3D010C27EE014F000A8506 /* CustomStyle.swift in Sources */,
+				4BFBB6E827EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */,
+				4BFBB70127EB504300663DED /* ScaleValue.swift in Sources */,
+				4BA1E35027EC28D0002DE9F3 /* NormalValue.swift in Sources */,
+				4BFBB6FB27EB4FCC00663DED /* LineValue.swift in Sources */,
+				4BFBB6EE27EAFEBB00663DED /* Color+Extensions.swift in Sources */,
+				4BFBB6F527EB4F4300663DED /* CapsuleValue.swift in Sources */,
+				4BA1E35327EC2903002DE9F3 /* ViscosityValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B0EE0F027E4B84E005B804E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B0EE0F127E4B84E005B804E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4B0EE0F327E4B84E005B804E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B0EE0F427E4B84E005B804E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B0EE0F627E4B84E005B804E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4B0EE0F727E4B84E005B804E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B0EE0D827E4B84D005B804E /* Build configuration list for PBXProject "AxisSegmentedViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0EE0F027E4B84E005B804E /* Debug */,
+				4B0EE0F127E4B84E005B804E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B0EE0F227E4B84E005B804E /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0EE0F327E4B84E005B804E /* Debug */,
+				4B0EE0F427E4B84E005B804E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B0EE0F527E4B84E005B804E /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0EE0F627E4B84E005B804E /* Debug */,
+				4B0EE0F727E4B84E005B804E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B0EE0FB27E4BE88005B804E /* AxisSegmentedView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AxisSegmentedView;
+		};
+		4B0EE0FD27E4BE8B005B804E /* AxisSegmentedView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AxisSegmentedView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B0EE0D527E4B84D005B804E /* Project object */;
+}
