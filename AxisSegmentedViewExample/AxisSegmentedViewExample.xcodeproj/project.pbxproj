@@ -15,20 +15,42 @@
 		4B0EE0EF27E4B84E005B804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EE0DC27E4B84E005B804E /* Assets.xcassets */; };
 		4B0EE0FC27E4BE88005B804E /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0EE0FB27E4BE88005B804E /* AxisSegmentedView */; };
 		4B0EE0FE27E4BE8C005B804E /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0EE0FD27E4BE8B005B804E /* AxisSegmentedView */; };
-		4B3D010B27EE014F000A8506 /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
-		4B3D010C27EE014F000A8506 /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
-		4B4A605927EF6052008D69AF /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
-		4B4A605A27EF6052008D69AF /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
+		4B4D2CDA27EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CD927EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift */; };
+		4B4D2CDC27EFFD6800EE251F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CDB27EFFD6800EE251F /* ContentView.swift */; };
+		4B4D2CDE27EFFD6900EE251F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4D2CDD27EFFD6900EE251F /* Assets.xcassets */; };
+		4B4D2CE127EFFD6900EE251F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4D2CE027EFFD6900EE251F /* Preview Assets.xcassets */; };
+		4B4D2CE627EFFE3700EE251F /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 4B4D2CE527EFFE3700EE251F /* AxisSegmentedView */; };
+		4B4D2CE727EFFE7200EE251F /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */; };
+		4B4D2D0227F0043F00EE251F /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CFE27F0043F00EE251F /* SegmentedListView.swift */; };
+		4B4D2D0327F0043F00EE251F /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0027F0043F00EE251F /* CustomStyle.swift */; };
+		4B4D2D0427F0043F00EE251F /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CFF27F0043F00EE251F /* WithoutStyleView.swift */; };
+		4B4D2D0527F0043F00EE251F /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CFD27F0043F00EE251F /* SegmentedViewWithControl.swift */; };
+		4B4D2D0627F0043F00EE251F /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0127F0043F00EE251F /* SelectionItemView.swift */; };
+		4B4D2D0727F0043F00EE251F /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2CFC27F0043F00EE251F /* CustomStyleView.swift */; };
+		4B4D2D1127F004B600EE251F /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
+		4B4D2D1227F004B600EE251F /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
+		4B4D2D1327F004C000EE251F /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
+		4B4D2D1427F004C000EE251F /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
+		4B4D2D1527F004C300EE251F /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
+		4B4D2D1627F004C300EE251F /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
+		4B4D2D1727F004C600EE251F /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
+		4B4D2D1827F004C600EE251F /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
+		4B4D2D1927F004C900EE251F /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
+		4B4D2D1A27F004C900EE251F /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A605827EF6052008D69AF /* CustomStyleView.swift */; };
+		4B4D2D1B27F004CC00EE251F /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
+		4B4D2D1C27F004CC00EE251F /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D010A27EE014F000A8506 /* CustomStyle.swift */; };
+		4B4D2D1D27F0051900EE251F /* BacisValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0E27F0045200EE251F /* BacisValue.swift */; };
+		4B4D2D1E27F0052300EE251F /* NormalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0A27F0045200EE251F /* NormalValue.swift */; };
+		4B4D2D1F27F0052500EE251F /* ViscosityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0B27F0045200EE251F /* ViscosityValue.swift */; };
+		4B4D2D2027F0052800EE251F /* CapsuleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D1027F0045200EE251F /* CapsuleValue.swift */; };
+		4B4D2D2127F0052A00EE251F /* JellyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0F27F0045200EE251F /* JellyValue.swift */; };
+		4B4D2D2227F0052C00EE251F /* LineValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0927F0045200EE251F /* LineValue.swift */; };
+		4B4D2D2327F0052E00EE251F /* NeumorphismValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0C27F0045200EE251F /* NeumorphismValue.swift */; };
+		4B4D2D2427F0053100EE251F /* ScaleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D2D0D27F0045200EE251F /* ScaleValue.swift */; };
 		4BA1E34F27EC28D0002DE9F3 /* NormalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */; };
 		4BA1E35027EC28D0002DE9F3 /* NormalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */; };
 		4BA1E35227EC2903002DE9F3 /* ViscosityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */; };
 		4BA1E35327EC2903002DE9F3 /* ViscosityValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */; };
-		4BFBB6E427EAEECD00663DED /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
-		4BFBB6E527EAEECD00663DED /* SegmentedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */; };
-		4BFBB6E727EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
-		4BFBB6E827EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E627EAEF2000663DED /* SegmentedViewWithControl.swift */; };
-		4BFBB6EA27EAEF6D00663DED /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
-		4BFBB6EB27EAEF6D00663DED /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6E927EAEF6D00663DED /* SelectionItemView.swift */; };
 		4BFBB6ED27EAFEBB00663DED /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */; };
 		4BFBB6EE27EAFEBB00663DED /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6EC27EAFEBB00663DED /* Color+Extensions.swift */; };
 		4BFBB6F127EB4EDA00663DED /* BacisValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6F027EB4EDA00663DED /* BacisValue.swift */; };
@@ -43,8 +65,6 @@
 		4BFBB6FE27EB501000663DED /* NeumorphismValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FC27EB501000663DED /* NeumorphismValue.swift */; };
 		4BFBB70027EB504300663DED /* ScaleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FF27EB504300663DED /* ScaleValue.swift */; };
 		4BFBB70127EB504300663DED /* ScaleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB6FF27EB504300663DED /* ScaleValue.swift */; };
-		4BFBB70327EB69EA00663DED /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
-		4BFBB70427EB69EA00663DED /* WithoutStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFBB70227EB69EA00663DED /* WithoutStyleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +77,29 @@
 		4B0EE0F927E4B875005B804E /* AxisSegmentedView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AxisSegmentedView; path = ..; sourceTree = "<group>"; };
 		4B3D010A27EE014F000A8506 /* CustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
 		4B4A605827EF6052008D69AF /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
+		4B4D2CC727EFFD3200EE251F /* AxisSegmentedViewExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisSegmentedViewExampleApp.swift; sourceTree = "<group>"; };
+		4B4D2CC927EFFD3200EE251F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B4D2CCB27EFFD3300EE251F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B4D2CCE27EFFD3300EE251F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B4D2CD727EFFD6800EE251F /* AxisSegmentedViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxisSegmentedViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4D2CD927EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisSegmentedViewExample__tvOS_App.swift; sourceTree = "<group>"; };
+		4B4D2CDB27EFFD6800EE251F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B4D2CDD27EFFD6900EE251F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B4D2CE027EFFD6900EE251F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B4D2CFC27F0043F00EE251F /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
+		4B4D2CFD27F0043F00EE251F /* SegmentedViewWithControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewWithControl.swift; sourceTree = "<group>"; };
+		4B4D2CFE27F0043F00EE251F /* SegmentedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedListView.swift; sourceTree = "<group>"; };
+		4B4D2CFF27F0043F00EE251F /* WithoutStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutStyleView.swift; sourceTree = "<group>"; };
+		4B4D2D0027F0043F00EE251F /* CustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
+		4B4D2D0127F0043F00EE251F /* SelectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItemView.swift; sourceTree = "<group>"; };
+		4B4D2D0927F0045200EE251F /* LineValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineValue.swift; sourceTree = "<group>"; };
+		4B4D2D0A27F0045200EE251F /* NormalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalValue.swift; sourceTree = "<group>"; };
+		4B4D2D0B27F0045200EE251F /* ViscosityValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViscosityValue.swift; sourceTree = "<group>"; };
+		4B4D2D0C27F0045200EE251F /* NeumorphismValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismValue.swift; sourceTree = "<group>"; };
+		4B4D2D0D27F0045200EE251F /* ScaleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleValue.swift; sourceTree = "<group>"; };
+		4B4D2D0E27F0045200EE251F /* BacisValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacisValue.swift; sourceTree = "<group>"; };
+		4B4D2D0F27F0045200EE251F /* JellyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyValue.swift; sourceTree = "<group>"; };
+		4B4D2D1027F0045200EE251F /* CapsuleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleValue.swift; sourceTree = "<group>"; };
 		4BA1E34E27EC28D0002DE9F3 /* NormalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalValue.swift; sourceTree = "<group>"; };
 		4BA1E35127EC2903002DE9F3 /* ViscosityValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViscosityValue.swift; sourceTree = "<group>"; };
 		4BFBB6E327EAEECD00663DED /* SegmentedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedListView.swift; sourceTree = "<group>"; };
@@ -89,6 +132,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B4D2CD427EFFD6800EE251F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4D2CE627EFFE3700EE251F /* AxisSegmentedView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +149,8 @@
 				4B0EE0F827E4B875005B804E /* Packages */,
 				4B0EE0D927E4B84D005B804E /* Shared */,
 				4B0EE0E827E4B84E005B804E /* macOS */,
+				4B4D2CC627EFFD3200EE251F /* AxisSegmentedViewExample */,
+				4B4D2CD827EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */,
 				4B0EE0E227E4B84E005B804E /* Products */,
 				4B0EE0FA27E4BE88005B804E /* Frameworks */,
 			);
@@ -126,6 +179,7 @@
 			children = (
 				4B0EE0E127E4B84E005B804E /* AxisSegmentedViewExample.app */,
 				4B0EE0E727E4B84E005B804E /* AxisSegmentedViewExample.app */,
+				4B4D2CD727EFFD6800EE251F /* AxisSegmentedViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +205,66 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B4D2CC627EFFD3200EE251F /* AxisSegmentedViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D2CC727EFFD3200EE251F /* AxisSegmentedViewExampleApp.swift */,
+				4B4D2CC927EFFD3200EE251F /* ContentView.swift */,
+				4B4D2CCB27EFFD3300EE251F /* Assets.xcassets */,
+				4B4D2CCD27EFFD3300EE251F /* Preview Content */,
+			);
+			path = AxisSegmentedViewExample;
+			sourceTree = "<group>";
+		};
+		4B4D2CCD27EFFD3300EE251F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D2CCE27EFFD3300EE251F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B4D2CD827EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D2CD927EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift */,
+				4B4D2CDB27EFFD6800EE251F /* ContentView.swift */,
+				4B4D2D0827F0044C00EE251F /* ViewModel */,
+				4B4D2D0127F0043F00EE251F /* SelectionItemView.swift */,
+				4B4D2CFE27F0043F00EE251F /* SegmentedListView.swift */,
+				4B4D2CFD27F0043F00EE251F /* SegmentedViewWithControl.swift */,
+				4B4D2CFF27F0043F00EE251F /* WithoutStyleView.swift */,
+				4B4D2CFC27F0043F00EE251F /* CustomStyleView.swift */,
+				4B4D2D0027F0043F00EE251F /* CustomStyle.swift */,
+				4B4D2CDD27EFFD6900EE251F /* Assets.xcassets */,
+				4B4D2CDF27EFFD6900EE251F /* Preview Content */,
+			);
+			path = "AxisSegmentedViewExample (tvOS)";
+			sourceTree = "<group>";
+		};
+		4B4D2CDF27EFFD6900EE251F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D2CE027EFFD6900EE251F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B4D2D0827F0044C00EE251F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B4D2D0E27F0045200EE251F /* BacisValue.swift */,
+				4B4D2D0A27F0045200EE251F /* NormalValue.swift */,
+				4B4D2D0B27F0045200EE251F /* ViscosityValue.swift */,
+				4B4D2D1027F0045200EE251F /* CapsuleValue.swift */,
+				4B4D2D0F27F0045200EE251F /* JellyValue.swift */,
+				4B4D2D0927F0045200EE251F /* LineValue.swift */,
+				4B4D2D0C27F0045200EE251F /* NeumorphismValue.swift */,
+				4B4D2D0D27F0045200EE251F /* ScaleValue.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4BFBB6EF27EB4EC100663DED /* ViewModel */ = {
@@ -211,6 +325,26 @@
 			productReference = 4B0EE0E727E4B84E005B804E /* AxisSegmentedViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4B4D2CD627EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4D2CE227EFFD6900EE251F /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (tvOS)" */;
+			buildPhases = (
+				4B4D2CD327EFFD6800EE251F /* Sources */,
+				4B4D2CD427EFFD6800EE251F /* Frameworks */,
+				4B4D2CD527EFFD6800EE251F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AxisSegmentedViewExample (tvOS)";
+			packageProductDependencies = (
+				4B4D2CE527EFFE3700EE251F /* AxisSegmentedView */,
+			);
+			productName = "AxisSegmentedViewExample (tvOS)";
+			productReference = 4B4D2CD727EFFD6800EE251F /* AxisSegmentedViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,6 +359,9 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					4B0EE0E627E4B84E005B804E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					4B4D2CD627EFFD6800EE251F = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -244,6 +381,7 @@
 			targets = (
 				4B0EE0E027E4B84E005B804E /* AxisSegmentedViewExample (iOS) */,
 				4B0EE0E627E4B84E005B804E /* AxisSegmentedViewExample (macOS) */,
+				4B4D2CD627EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +403,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B4D2CD527EFFD6800EE251F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4D2CE127EFFD6900EE251F /* Preview Assets.xcassets in Resources */,
+				4B4D2CDE27EFFD6900EE251F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,21 +419,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFBB70327EB69EA00663DED /* WithoutStyleView.swift in Sources */,
 				4BFBB6F727EB4F8B00663DED /* JellyValue.swift in Sources */,
-				4BFBB6EA27EAEF6D00663DED /* SelectionItemView.swift in Sources */,
 				4BFBB6F127EB4EDA00663DED /* BacisValue.swift in Sources */,
+				4B4D2D1B27F004CC00EE251F /* CustomStyle.swift in Sources */,
+				4B4D2D1127F004B600EE251F /* SelectionItemView.swift in Sources */,
 				4B0EE0EC27E4B84E005B804E /* ContentView.swift in Sources */,
 				4B0EE0EA27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */,
-				4BFBB6E427EAEECD00663DED /* SegmentedListView.swift in Sources */,
+				4B4D2D1527F004C300EE251F /* SegmentedViewWithControl.swift in Sources */,
 				4BFBB6FD27EB501000663DED /* NeumorphismValue.swift in Sources */,
-				4B4A605927EF6052008D69AF /* CustomStyleView.swift in Sources */,
-				4B3D010B27EE014F000A8506 /* CustomStyle.swift in Sources */,
-				4BFBB6E727EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */,
+				4B4D2D1927F004C900EE251F /* CustomStyleView.swift in Sources */,
 				4BFBB70027EB504300663DED /* ScaleValue.swift in Sources */,
+				4B4D2D1327F004C000EE251F /* SegmentedListView.swift in Sources */,
 				4BA1E34F27EC28D0002DE9F3 /* NormalValue.swift in Sources */,
 				4BFBB6FA27EB4FCC00663DED /* LineValue.swift in Sources */,
 				4BFBB6ED27EAFEBB00663DED /* Color+Extensions.swift in Sources */,
+				4B4D2D1727F004C600EE251F /* WithoutStyleView.swift in Sources */,
 				4BFBB6F427EB4F4300663DED /* CapsuleValue.swift in Sources */,
 				4BA1E35227EC2903002DE9F3 /* ViscosityValue.swift in Sources */,
 			);
@@ -296,23 +443,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFBB70427EB69EA00663DED /* WithoutStyleView.swift in Sources */,
 				4BFBB6F827EB4F8B00663DED /* JellyValue.swift in Sources */,
-				4BFBB6EB27EAEF6D00663DED /* SelectionItemView.swift in Sources */,
 				4BFBB6F227EB4EDA00663DED /* BacisValue.swift in Sources */,
+				4B4D2D1C27F004CC00EE251F /* CustomStyle.swift in Sources */,
+				4B4D2D1227F004B600EE251F /* SelectionItemView.swift in Sources */,
 				4B0EE0ED27E4B84E005B804E /* ContentView.swift in Sources */,
 				4B0EE0EB27E4B84E005B804E /* AxisSegmentedViewExampleApp.swift in Sources */,
-				4BFBB6E527EAEECD00663DED /* SegmentedListView.swift in Sources */,
+				4B4D2D1627F004C300EE251F /* SegmentedViewWithControl.swift in Sources */,
 				4BFBB6FE27EB501000663DED /* NeumorphismValue.swift in Sources */,
-				4B4A605A27EF6052008D69AF /* CustomStyleView.swift in Sources */,
-				4B3D010C27EE014F000A8506 /* CustomStyle.swift in Sources */,
-				4BFBB6E827EAEF2000663DED /* SegmentedViewWithControl.swift in Sources */,
+				4B4D2D1A27F004C900EE251F /* CustomStyleView.swift in Sources */,
 				4BFBB70127EB504300663DED /* ScaleValue.swift in Sources */,
+				4B4D2D1427F004C000EE251F /* SegmentedListView.swift in Sources */,
 				4BA1E35027EC28D0002DE9F3 /* NormalValue.swift in Sources */,
 				4BFBB6FB27EB4FCC00663DED /* LineValue.swift in Sources */,
 				4BFBB6EE27EAFEBB00663DED /* Color+Extensions.swift in Sources */,
+				4B4D2D1827F004C600EE251F /* WithoutStyleView.swift in Sources */,
 				4BFBB6F527EB4F4300663DED /* CapsuleValue.swift in Sources */,
 				4BA1E35327EC2903002DE9F3 /* ViscosityValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4D2CD327EFFD6800EE251F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4D2D1D27F0051900EE251F /* BacisValue.swift in Sources */,
+				4B4D2D0327F0043F00EE251F /* CustomStyle.swift in Sources */,
+				4B4D2D2227F0052C00EE251F /* LineValue.swift in Sources */,
+				4B4D2CDC27EFFD6800EE251F /* ContentView.swift in Sources */,
+				4B4D2D0527F0043F00EE251F /* SegmentedViewWithControl.swift in Sources */,
+				4B4D2D2327F0052E00EE251F /* NeumorphismValue.swift in Sources */,
+				4B4D2CDA27EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift in Sources */,
+				4B4D2D1F27F0052500EE251F /* ViscosityValue.swift in Sources */,
+				4B4D2D2427F0053100EE251F /* ScaleValue.swift in Sources */,
+				4B4D2D0627F0043F00EE251F /* SelectionItemView.swift in Sources */,
+				4B4D2D2027F0052800EE251F /* CapsuleValue.swift in Sources */,
+				4B4D2D0427F0043F00EE251F /* WithoutStyleView.swift in Sources */,
+				4B4D2D0727F0043F00EE251F /* CustomStyleView.swift in Sources */,
+				4B4D2CE727EFFE7200EE251F /* Color+Extensions.swift in Sources */,
+				4B4D2D0227F0043F00EE251F /* SegmentedListView.swift in Sources */,
+				4B4D2D2127F0052A00EE251F /* JellyValue.swift in Sources */,
+				4B4D2D1E27F0052300EE251F /* NormalValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +716,63 @@
 			};
 			name = Release;
 		};
+		4B4D2CE327EFFD6900EE251F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AxisSegmentedViewExample (tvOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		4B4D2CE427EFFD6900EE251F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AxisSegmentedViewExample (tvOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = SM6445X39C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devstore.AxisSegmentedViewExample;
+				PRODUCT_NAME = AxisSegmentedViewExample;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +803,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4B4D2CE227EFFD6900EE251F /* Build configuration list for PBXNativeTarget "AxisSegmentedViewExample (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4D2CE327EFFD6900EE251F /* Debug */,
+				4B4D2CE427EFFD6900EE251F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -583,6 +820,10 @@
 			productName = AxisSegmentedView;
 		};
 		4B0EE0FD27E4BE8B005B804E /* AxisSegmentedView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AxisSegmentedView;
+		};
+		4B4D2CE527EFFE3700EE251F /* AxisSegmentedView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AxisSegmentedView;
 		};
