@@ -56,19 +56,16 @@ var listView: some View {
     
 AxisSegmentedView(selection: $selection, constant: .init()) {
     Rectangle()
-        .fill(colors[0])
         .overlay(
             Text("0")
         )
         .itemTag(0, selectArea: maxArea1) {
             Rectangle()
-                .fill(.red)
                 .overlay(
                     Text("0")
                 )
         }
     Rectangle()
-        .fill(colors[1])
         .overlay(
             Text("1")
         )
@@ -76,7 +73,6 @@ AxisSegmentedView(selection: $selection, constant: .init()) {
             listView
         }
     Rectangle()
-        .fill(colors[2])
         .overlay(
             Text("2")
         )
@@ -84,7 +80,6 @@ AxisSegmentedView(selection: $selection, constant: .init()) {
             listView
         }
     Rectangle()
-        .fill(colors[3])
         .overlay(
             Text("3")
         )
