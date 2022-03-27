@@ -82,51 +82,67 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     
     func body(content: Content) -> some View {
         let item = ASItem(tag: tag, selectArea: selectArea, select: AnyView(select))
-        Button {
-            self.selectionValue.selection = tag
-            self.stateValue.isInitialRun = false
-            if positionValue.constant.isActivatedVibration { vibration() }
-        } label: {
-            ZStack(alignment: positionValue.constant.axisMode == .horizontal ? .leading : .top)  {
-                ZStack{
-                    if positionValue.isHasStyle {
+        ZStack {
+            if positionValue.isHasStyle {
+                Button {
+                    self.selectionValue.selection = tag
+                    self.stateValue.isInitialRun = false
+                    if positionValue.constant.isActivatedVibration { vibration() }
+                } label: {
+                    ZStack(alignment: positionValue.constant.axisMode == .horizontal ? .leading : .top)  {
                         getItemView(content)
-                    }else {
-                        ZStack {
-                            content.opacity(tag != selectionValue.selection ? 1 : 0)
-                            select?.opacity(tag == selectionValue.selection ? 1 : 0)
-                        }
+                            .frame(width: getItemSize().width, height: getItemSize().height)
+                            .preference(key: ASItemPreferenceKey.self, value: [item])
                     }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            }else {
+                ZStack {
+                    Button {
+                        self.selectionValue.selection = tag
+                        self.stateValue.isInitialRun = false
+                        if positionValue.constant.isActivatedVibration { vibration() }
+                    } label: {
+                        content
+                    }
+                    .contentShape(Rectangle())
+                    .buttonStyle(.plain)
+                    .opacity(tag != selectionValue.selection ? 1 : 0)
+                    
+                    select?
+                        .contentShape(Rectangle())
+                        .opacity(tag == selectionValue.selection ? 1 : 0)
+                    
                 }
                 .frame(width: getItemSize().width, height: getItemSize().height)
                 .preference(key: ASItemPreferenceKey.self, value: [item])
-                
-                if isShowDivideLine() {
-                    ZStack {
-                        if positionValue.constant.axisMode == .horizontal {
-                            divideLineView
-                                .offset(x: -positionValue.constant.divideLine.width * 0.5)
-                                .matchedGeometryEffect(id: "DivideLine", in: namespace)
-                        }else {
-                            divideLineView
-                                .offset(y: -positionValue.constant.divideLine.width * 0.5)
-                                .matchedGeometryEffect(id: "DivideLine", in: namespace)
-                        }
+            }
+            
+            if isShowDivideLine() {
+                ZStack {
+                    if positionValue.constant.axisMode == .horizontal {
+                        divideLineView
+                            .offset(x: -positionValue.constant.divideLine.width * 0.5)
+                            .matchedGeometryEffect(id: "DivideLine", in: namespace)
+                    }else {
+                        divideLineView
+                            .offset(y: -positionValue.constant.divideLine.width * 0.5)
+                            .matchedGeometryEffect(id: "DivideLine", in: namespace)
                     }
                 }
             }
-            .contentShape(Rectangle())
-            .onAppear {
-                self.setupStateValue()
-            }
-            .onChange(of: self.selectionValue.selection) { newValue in
-                self.setupStateValue()
-            }
-            .onChange(of: selectArea) { newValue in
-                positionValue.toggleSelectArea.toggle()
-            }
         }
-        .buttonStyle(.plain)
+        .onAppear {
+            self.setupStateValue()
+        }
+        .onChange(of: self.selectionValue.selection) { newValue in
+            self.setupStateValue()
+        }
+        .onChange(of: selectArea) { newValue in
+            positionValue.toggleSelectArea.toggle()
+        }
+        
     }
     
     private func getItemSize() -> CGSize {

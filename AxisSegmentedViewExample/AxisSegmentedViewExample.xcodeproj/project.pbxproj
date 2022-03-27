@@ -77,10 +77,6 @@
 		4B0EE0F927E4B875005B804E /* AxisSegmentedView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AxisSegmentedView; path = ..; sourceTree = "<group>"; };
 		4B3D010A27EE014F000A8506 /* CustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
 		4B4A605827EF6052008D69AF /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
-		4B4D2CC727EFFD3200EE251F /* AxisSegmentedViewExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisSegmentedViewExampleApp.swift; sourceTree = "<group>"; };
-		4B4D2CC927EFFD3200EE251F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4B4D2CCB27EFFD3300EE251F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4B4D2CCE27EFFD3300EE251F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B4D2CD727EFFD6800EE251F /* AxisSegmentedViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxisSegmentedViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4D2CD927EFFD6800EE251F /* AxisSegmentedViewExample__tvOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisSegmentedViewExample__tvOS_App.swift; sourceTree = "<group>"; };
 		4B4D2CDB27EFFD6800EE251F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,7 +145,6 @@
 				4B0EE0F827E4B875005B804E /* Packages */,
 				4B0EE0D927E4B84D005B804E /* Shared */,
 				4B0EE0E827E4B84E005B804E /* macOS */,
-				4B4D2CC627EFFD3200EE251F /* AxisSegmentedViewExample */,
 				4B4D2CD827EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */,
 				4B0EE0E227E4B84E005B804E /* Products */,
 				4B0EE0FA27E4BE88005B804E /* Frameworks */,
@@ -205,25 +200,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4B4D2CC627EFFD3200EE251F /* AxisSegmentedViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				4B4D2CC727EFFD3200EE251F /* AxisSegmentedViewExampleApp.swift */,
-				4B4D2CC927EFFD3200EE251F /* ContentView.swift */,
-				4B4D2CCB27EFFD3300EE251F /* Assets.xcassets */,
-				4B4D2CCD27EFFD3300EE251F /* Preview Content */,
-			);
-			path = AxisSegmentedViewExample;
-			sourceTree = "<group>";
-		};
-		4B4D2CCD27EFFD3300EE251F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				4B4D2CCE27EFFD3300EE251F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4B4D2CD827EFFD6800EE251F /* AxisSegmentedViewExample (tvOS) */ = {
