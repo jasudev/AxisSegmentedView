@@ -1,9 +1,10 @@
 # **AxisSegmentedView for SwiftUI**
-A library that allows you to easily create various styles of segmented views. Supports iOS and macOS.
+A library that allows you to easily create various styles of segmented views. Supports iOS, macOS and tvOS.
 
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-blue?style=flat-square)](https://developer.apple.com/macOS)
 [![iOS](https://img.shields.io/badge/iOS-14.0-blue.svg)](https://developer.apple.com/iOS)
 [![macOS](https://img.shields.io/badge/macOS-11.0-blue.svg)](https://developer.apple.com/macOS)
+[![tvOS](https://img.shields.io/badge/tvOS-14.0-blue.svg)](https://developer.apple.com/tvOS)
 [![instagram](https://img.shields.io/badge/instagram-@dev.fabula-orange.svg?style=flat-square)](https://www.instagram.com/dev.fabula)
 [![SPM](https://img.shields.io/badge/SPM-compatible-red?style=flat-square)](https://developer.apple.com/documentation/swift_packages/package/)
 [![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)  
