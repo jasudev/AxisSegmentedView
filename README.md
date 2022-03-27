@@ -50,7 +50,11 @@ AxisSegmentedView(selection: $selection, constant: .init()) {
 ```swift
 var listView: some View {
     List(0...100, id: \.self) { index in
-        Text("Index \(index)")
+        Button {
+            print("click")
+        } label: {
+            Text("Index \(index)")
+        }
     }.listStyle(.plain)
 }
     
