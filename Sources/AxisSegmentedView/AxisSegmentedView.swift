@@ -107,12 +107,14 @@ public extension AxisSegmentedView where SelectionValue: Hashable, Content: View
     ///   - constant: A constant value for segmented view.
     ///   - content: Content views with tab items applied.
     ///   - style: The style of the segmented view.
+    ///   - onTapReceive: Method that treats the currently selected tab as imperative syntax.
     init(selection: Binding<SelectionValue>,
          constant: ASConstant = .init(),
          @ViewBuilder _ content: @escaping () -> Content,
-         @ViewBuilder style: @escaping () -> Style) {
+         @ViewBuilder style: @escaping () -> Style,
+         onTapReceive: ((SelectionValue) -> Void)? = nil) {
         
-        self.selectionValue = ASSelectionValue(selection: selection)
+        self.selectionValue = ASSelectionValue(selection: selection, onTapReceive: onTapReceive)
         self.constant = constant
         self.style = style
         self.content = content
@@ -126,11 +128,13 @@ public extension AxisSegmentedView where SelectionValue: Hashable, Content: View
     ///   - selection: The currently selected tap value.
     ///   - constant: A constant value for segmented view.
     ///   - content: Content views with tab items applied.
+    ///   - onTapReceive: Method that treats the currently selected tab as imperative syntax.
     init(selection: Binding<SelectionValue>,
          constant: ASConstant = .init(),
-         @ViewBuilder _ content: @escaping () -> Content) {
+         @ViewBuilder _ content: @escaping () -> Content,
+         onTapReceive: ((SelectionValue) -> Void)? = nil) {
         
-        self.selectionValue = ASSelectionValue(selection: selection)
+        self.selectionValue = ASSelectionValue(selection: selection, onTapReceive: onTapReceive)
         self.constant = constant
         self.content = content
     }

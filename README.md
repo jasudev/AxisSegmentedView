@@ -42,6 +42,11 @@ AxisSegmentedView(selection: $selection, constant: .init()) {
         }
 } style: {
     ASBasicStyle()
+} onTapReceive: { selectionTap in
+    /// Imperative syntax
+    print("---------------------")
+    print("Selection : ", selectionTap)
+    print("Already selected : ", self.selection == selectionTap)
 }
 .frame(height: 44)
 ```

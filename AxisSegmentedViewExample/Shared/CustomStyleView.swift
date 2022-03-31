@@ -34,6 +34,11 @@ struct CustomStyleView: View {
                     }
             } style: {
                 CustomStyle(color: .blue)
+            } onTapReceive: { selectionTap in
+                /// Imperative syntax
+                print("---------------------")
+                print("Selection : ", selectionTap)
+                print("Already selected : ", self.selection == selectionTap)
             }
             .frame(width: 44)
             
@@ -56,6 +61,11 @@ struct CustomStyleView: View {
                     }
             } style: {
                 CustomStyle(color: .red)
+            } onTapReceive: { selectionTap in
+                /// Imperative syntax
+                print("---------------------")
+                print("Selection : ", selectionTap)
+                print("Already selected : ", self.selection == selectionTap)
             }
             .frame(height: 44)
         }

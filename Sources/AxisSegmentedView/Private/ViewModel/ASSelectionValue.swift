@@ -30,13 +30,15 @@ class ASSelectionValue<SelectionValue: Hashable>: ObservableObject {
     
     /// The currently selected tap value.
     @Binding var selection: SelectionValue
+    var onTapReceive: ((SelectionValue) -> Void)?
     
     /// Initializes `ASSelectionValue`
     /// - Parameters:
     ///   - selection: The currently selected tap value.
-    init(selection: Binding<SelectionValue>) {
+    ///   - onTapReceive: Method that treats the currently selected tab as imperative syntax.
+    init(selection: Binding<SelectionValue>, onTapReceive: ((SelectionValue) -> Void)? = nil) {
         _selection = selection
-        
+        self.onTapReceive = onTapReceive
     }
 }
 

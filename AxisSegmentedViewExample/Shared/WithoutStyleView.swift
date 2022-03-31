@@ -21,10 +21,20 @@ struct WithoutStyleView: View {
         VStack {
             AxisSegmentedView(selection: $selection1, constant: constant1) {
                 TabViews()
+            } onTapReceive: { selectionTap in
+                /// Imperative syntax
+                print("---------------------")
+                print("Selection : ", selectionTap)
+                print("Already selected : ", self.selection1 == selectionTap)
             }
             .clipped()
             AxisSegmentedView(selection: $selection2, constant: constant2) {
                 TabViews()
+            } onTapReceive: { selectionTap in
+                /// Imperative syntax
+                print("---------------------")
+                print("Selection : ", selectionTap)
+                print("Already selected : ", self.selection2 == selectionTap)
             }
             .clipped()
         }

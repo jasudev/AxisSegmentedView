@@ -50,11 +50,16 @@ struct SegmentedViewWithControl<Tabs: View, Style: View> : View {
     }
     
     private var segmentedView: some View {
-        AxisSegmentedView(selection: $selection, constant: constant, {
+        AxisSegmentedView(selection: $selection, constant: constant) {
             tabs()
-        }, style: {
+        } style: {
             style()
-        })
+        } onTapReceive: { selectionTap in
+            /// Imperative syntax
+            print("---------------------")
+            print("Selection : ", selectionTap)
+            print("Already selected : ", self.selection == selectionTap)
+        }
         .font(.system(size: 20))
     }
     

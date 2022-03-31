@@ -44,23 +44,31 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     var selectArea: CGFloat
     var select: S? = nil
     
+    private var selection: Binding<SelectionValue> { Binding(
+        get: { self.selectionValue.selection },
+        set: {
+            self.selectionValue.onTapReceive?($0)
+            self.selectionValue.selection = $0
+        })
+    }
+    
     var normalSize: CGSize {
         if positionValue.constant.axisMode == .horizontal {
-            return CGSize(width: positionValue.getNormalArea(selectionValue.selection),
+            return CGSize(width: positionValue.getNormalArea(self.selection.wrappedValue),
                           height: positionValue.size.height)
         }else {
             return CGSize(width: positionValue.size.width,
-                          height: positionValue.getNormalArea(selectionValue.selection))
+                          height: positionValue.getNormalArea(self.selection.wrappedValue))
         }
     }
     
     var selectSize: CGSize {
         if positionValue.constant.axisMode == .horizontal {
-            return CGSize(width: positionValue.getSelectArea(selectionValue.selection),
+            return CGSize(width: positionValue.getSelectArea(self.selection.wrappedValue),
                           height: positionValue.size.height)
         }else {
             return CGSize(width: positionValue.size.width,
-                          height: positionValue.getSelectArea(selectionValue.selection))
+                          height: positionValue.getSelectArea(self.selection.wrappedValue))
         }
     }
     
@@ -85,7 +93,7 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
         ZStack {
             if positionValue.isHasStyle {
                 Button {
-                    self.selectionValue.selection = tag
+                    self.selection.wrappedValue = tag
                     self.stateValue.isInitialRun = false
                     if positionValue.constant.isActivatedVibration { vibration() }
                 } label: {
@@ -100,7 +108,7 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
             }else {
                 ZStack {
                     Button {
-                        self.selectionValue.selection = tag
+                        self.selection.wrappedValue = tag
                         self.stateValue.isInitialRun = false
                         if positionValue.constant.isActivatedVibration { vibration() }
                     } label: {
@@ -108,11 +116,11 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
                     }
                     .contentShape(Rectangle())
                     .buttonStyle(.plain)
-                    .opacity(tag != selectionValue.selection ? 1 : 0)
+                    .opacity(tag != self.selection.wrappedValue ? 1 : 0)
                     
                     select?
                         .contentShape(Rectangle())
-                        .opacity(tag == selectionValue.selection ? 1 : 0)
+                        .opacity(tag == self.selection.wrappedValue ? 1 : 0)
                     
                 }
                 .frame(width: getItemSize().width, height: getItemSize().height)
@@ -136,7 +144,7 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
         .onAppear {
             self.setupStateValue()
         }
-        .onChange(of: self.selectionValue.selection) { newValue in
+        .onChange(of: self.selection.wrappedValue) { newValue in
             self.setupStateValue()
         }
         .onChange(of: selectArea) { newValue in
@@ -147,15 +155,15 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     
     private func getItemSize() -> CGSize {
         if positionValue.constant.axisMode == .horizontal {
-            return CGSize(width: tag == selectionValue.selection ? selectSize.width : normalSize.width, height: positionValue.size.height)
+            return CGSize(width: tag == self.selection.wrappedValue ? selectSize.width : normalSize.width, height: positionValue.size.height)
         }else {
-            return CGSize(width: positionValue.size.width, height: tag == selectionValue.selection ? selectSize.height : normalSize.height)
+            return CGSize(width: positionValue.size.width, height: tag == self.selection.wrappedValue ? selectSize.height : normalSize.height)
         }
     }
     
     private func isShowDivideLine() -> Bool {
         let currentIndex = positionValue.indexOfTag(tag)
-        let selectionIndex = positionValue.indexOfTag(selectionValue.selection)
+        let selectionIndex = positionValue.indexOfTag(self.selection.wrappedValue)
         if positionValue.constant.divideLine.isShowSelectionLine {
             return currentIndex != 0
         }else {
@@ -165,14 +173,14 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     
     private func getItemView(_ content: Content) -> some View {
         ZStack {
-            if tag == selectionValue.selection {
+            if tag == self.selection.wrappedValue {
                 ZStack {
                     if let select = select {
                         select
                             .onAppear {
                                 DispatchQueue.main.async {
                                     stateValue.previousIndex = stateValue.selectionIndex
-                                    stateValue.previousFrame = positionValue.getSelectFrame(self.selectionValue.selection, selectionIndex: stateValue.selectionIndex)
+                                    stateValue.previousFrame = positionValue.getSelectFrame(self.selection.wrappedValue, selectionIndex: stateValue.selectionIndex)
                                     
                                     if positionValue.constant.axisMode == .horizontal {
                                         stateValue.otherSize = CGSize(width: normalSize.width, height: positionValue.size.height)
@@ -198,11 +206,11 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     }
     
     private func setupStateValue() {
-        let selectionIndex = positionValue.indexOfTag(self.selectionValue.selection)
+        let selectionIndex = positionValue.indexOfTag(self.selection.wrappedValue)
         stateValue.constant = positionValue.constant
         stateValue.itemCount = positionValue.itemCount
         stateValue.selectionIndex = selectionIndex
-        stateValue.selectionFrame = positionValue.getSelectFrame(self.selectionValue.selection, selectionIndex: selectionIndex)
+        stateValue.selectionFrame = positionValue.getSelectFrame(self.selection.wrappedValue, selectionIndex: selectionIndex)
         stateValue.size = positionValue.size
     }
     
