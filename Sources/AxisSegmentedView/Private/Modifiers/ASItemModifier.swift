@@ -100,11 +100,11 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
                     ZStack(alignment: positionValue.constant.axisMode == .horizontal ? .leading : .top)  {
                         getItemView(content)
                             .frame(width: getItemSize().width, height: getItemSize().height)
-                            .preference(key: ASItemPreferenceKey.self, value: [item])
                     }
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+                .preference(key: ASItemPreferenceKey.self, value: [item])
             }else {
                 ZStack {
                     Button {
