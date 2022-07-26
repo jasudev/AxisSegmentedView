@@ -90,7 +90,7 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     
     func body(content: Content) -> some View {
         let item = ASItem(tag: tag, selectArea: selectArea, select: AnyView(select))
-        ZStack {
+        ZStack(alignment: .leading) {
             if positionValue.isHasStyle {
                 Button {
                     self.selection.wrappedValue = tag
