@@ -80,8 +80,10 @@ public struct AxisSegmentedView<SelectionValue, Content, Style> : View where Sel
             }
         }
         .onAppear {
-            positionValue.isHasStyle = self.style != nil
-            currentSize = proxy.size
+            DispatchQueue.main.async {
+                positionValue.isHasStyle = self.style != nil
+                currentSize = proxy.size
+            }
         }
         .backgroundPreferenceValue(ASItemPreferenceKey.self) { items in
             getBackground(items, size: proxy.size)
