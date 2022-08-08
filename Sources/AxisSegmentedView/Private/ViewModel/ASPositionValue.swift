@@ -32,8 +32,7 @@ class ASPositionValue<SelectionValue: Hashable>: ObservableObject {
     @Published var items: [ASItem] = []
     @Published var toggleSelectArea: Bool = false
     @Published var isHasStyle: Bool = true
-    
-    var constant: ASConstant = .init()
+    @Published var constant: ASConstant = .init()
     
     var itemCount: Int {
         return items.count
