@@ -40,6 +40,10 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
     @EnvironmentObject private var positionValue: ASPositionValue<SelectionValue>
     @Namespace private var namespace
     
+    var item: ASItem {
+        return ASItem(tag: tag, selectArea: selectArea, select: AnyView(select))
+    }
+    
     var tag: SelectionValue
     var selectArea: CGFloat
     var select: S? = nil
@@ -49,6 +53,7 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
         set: {
             self.selectionValue.onTapReceive?($0)
             self.selectionValue.selection = $0
+            self.setupStateValue()
         })
     }
     
@@ -142,9 +147,6 @@ struct ASItemModifier<SelectionValue: Hashable, S: View>: ViewModifier {
             }
         }
         .onAppear {
-            self.setupStateValue()
-        }
-        .onChange(of: self.selection.wrappedValue) { newValue in
             self.setupStateValue()
         }
         .onChange(of: selectArea) { newValue in
